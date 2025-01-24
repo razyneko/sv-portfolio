@@ -6,17 +6,19 @@
     <title>Shailendra Vishwakarma</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/switzer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 </head>
 <body>
+    <div id="pointer"></div>
     <div id="main">
-        <div id="hero">
+        <div data-scroll data-scroll-speed="-5" id="hero">
             <nav id="nav">
                 <div id="logo">Shailendra \ Vishwakarma</div>
                 <div id="nav-list">
-                    <h4>About</h4>
-                    <h4>Experience</h4>
-                    <h4>Skills</h4>
-                    <h4>Contact Me</h4>
+                    <a href="#hero"><h4>About</h4></a>
+                    <a href="#experience"><h4>Experience</h4></a>
+                    <a href="#skills"><h4>Skills</h4></a>
+                    <a href="#contact"><h4>Contact Me</h4></a>
                 </div>
             </nav>
             <div id="hero-content">
@@ -27,14 +29,20 @@
                 </div>
                 <h4><span>Based in</span><span>Pune, India</span></h4>
             </div>
+            <img id="hero-img" height="500px" width="300px" src="./images/hero.jpg" alt="">
             <div id="bio">
-                <p id="bio-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugit exercitationem maiores sequi ad nulla facilis, doloribus aperiam quaerat accusantium. Eveniet ab quae dicta quod non minima optio reprehenderit explicabo?
-                Corrupti cumque</p>
+                <p id="bio-para">Hi, I'm Shailendra! A Senior Data Analyst with 7+ years of experience in uncovering insights, creating impactful visualizations, and driving smarter decisions. I love turning data into stories that solve problems and deliver results.</p>
                 <button id="msg">Let's Talk</button>
             </div>
         </div>
         </div>
+        <div id="experience">
+
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
 </body>
 </html>
