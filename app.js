@@ -54,38 +54,70 @@ function heroAnimation() {
 
     const tl = gsap.timeline();
 
-    tl.from('#logo', {
-        y: -20,
+    tl.from('#nav', {
+        y: '-10',
         opacity: 0,
-        duration: 0.7,
+        duration: 1.2,
+        ease: Expo.easeInOut
     })
 
-    tl.from('#nav-list h4', {
-        y: -10,
-        opacity: 0,
-        duration: 0.7,
+
+    .to(".bound-elem" , {
+        y: 0,
+        ease: Expo.easeInOut,
+        delay: -1.3,
+        duration: 2,
+        stagger: .2
     })
-    
-    tl.from('#hero-img', {
+
+    .from("#bio", {
+        y: 10,
+        opacity: 0,
+        duration: 1.5,
+        delay: -1.3,
+        ease: Expo.easeInOut
+    })
+
+    .from('#hero img', {
         y: 20,
         opacity: 0,
-        duration: 0.7,
+        delay: -1.3,
+        ease: Expo.easeInOut,
+        delay: -1.3,
+        duration: 2,
     })
-
-    tl.from('#data', {
-        y: -30,
-        duration:0.7,
-        opacity: 0,
-    })
-
-    tl.from('#analyst', {
-        y: 30,
-        duration: 0.7,
-        opacity: 0,
-    })
-
 
 
 }
 
 heroAnimation();
+
+function scrollUp() {
+    gsap.from('#sphere i', {
+        y: 5, // Larger movement for better visibility
+        repeat: -1, // Infinite loop
+        yoyo: true, // Reverse the animation
+        duration:0.5,
+        ease: "power4.out",
+    })
+}
+
+scrollUp();
+
+function experienceAnimation() {
+    gsap.to('#exp-div', {
+    transform: 'translateX(-100%)',
+    scrollTrigger: {
+        trigger: '#experience',
+        scroller: 'body',
+        markers: true,
+        start: 'top 0%',
+        end: 'top -150%',
+        scrub: 2,
+        pin: true,
+        yoyo: true,
+    }
+    })
+}
+
+experienceAnimation();
