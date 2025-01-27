@@ -17,9 +17,11 @@ html,body{
     font-style: normal;
 }
 
+
 #main{
     position: relative;
     z-index: 100;
+
 }
 
 #pointer{
@@ -146,42 +148,208 @@ html,body{
     color:#111;
 }
 
-
-#experience{
-    position: relative;
-    height: 100dvh;
+#experiences{
+    display: flex;
     background-color: #E9E9E9;
-
+    width: 100vw;
 }
 
-#experience #exp-div{
+#slide{
+    height: 300dvh;
+}
+
+#page1{
+    height: 100dvh;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
-    padding: min(7rem) min(5rem);
-    width: 300vw;
+    align-items: center;
+    padding: 0 min(8rem);
+    
 }
 
-#experience #exp-div .slide #heading{
-    font-size: calc(4vw + 1rem);
+#page1 #heading h1{
+    font-size: calc(8vw + 2rem);
     font-family: apercu;
     text-transform: uppercase;
 }
+
 #scroll{
+    width: min(5rem);
+    height: min(5rem);
+    border-radius: 50%;
+    background-color: #111;
+    color: #fff;
+    font-family: switzer;
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin: auto 0;
 }
 
-#sphere{
+#page2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    width: 70px;
-    height: 70px;
-    background-color: #111;
-    border-radius: 50%;
-    color: #fff;
-    padding: 13px;
+    height: 100dvh;
+    width: 100vw;
     font-family: switzer;
+    padding: min(4rem, 8%) min(6rem, 10%);
 }
+.job-profile{
+    width: min(30vw, 40%);
+}
+#exp-card{
+    width: min(40vw, 50%);
+    background-color: white;
+    padding: min(0.5vw + 1rem);
+    border-radius: min(8px);
+}
+.banner img{
+    height: auto;
+    width: 100%;
+    margin-bottom: min(1rem);
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+#page3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100dvh;
+    width: 100vw;
+    font-family: switzer;
+    padding: min(4rem, 8%) min(6rem, 10%);
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.titles span{
+    font-size: calc(0.5vw + 0.5rem);
+}
+
+#skills{
+    width: 100vw;
+    height: 100dvh;
+    background-color: #E9E9E9;
+}
+
+#contact{
+    display: flex;
+    width: 100vw;
+    height: 100dvh;
+    background-color: #E9E9E9;
+}
+
+#socials a{
+    text-decoration: none;
+    color: #111;
+}
+
+#socials a i {
+    font-size: calc(2vw + 1rem);
+}
+
+#contact-me{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-me h1{
+    font-size: calc(4vw + 1rem);
+    font-family: apercu;
+}
+    
+.container {
+    position: relative;
+    width: 40%;
+    height: 70%;
+    margin: auto auto;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    font-family: switzer;
+  }
+  
+.inputs {
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+.inputs label{
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+.inputs input{
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.inputs button{
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+  
+.inputs label {
+    margin-bottom: 4px;
+  }
+  
+.inputs label:nth-of-type(2) {
+    margin-top: 12px;
+  }
+  
+.inputs input::placeholder {
+    color: gray;
+  }
+  
+.inputs input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+  
+  .inputs button {
+    color: white;
+    margin-top: 20px;
+    background: #1DA1F2;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+  }
+  
+  .inputs button:hover {
+    box-shadow: none;
+  }
+  

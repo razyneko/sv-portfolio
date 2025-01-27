@@ -93,7 +93,7 @@ function heroAnimation() {
 heroAnimation();
 
 function scrollUp() {
-    gsap.from('#sphere i', {
+    gsap.from('#scroll i', {
         y: 5, // Larger movement for better visibility
         repeat: -1, // Infinite loop
         yoyo: true, // Reverse the animation
@@ -103,21 +103,3 @@ function scrollUp() {
 }
 
 scrollUp();
-
-function experienceAnimation() {
-    gsap.to('#exp-div', {
-    transform: 'translateX(-100%)',
-    scrollTrigger: {
-        trigger: '#experience',
-        scroller: 'body',
-        markers: true,
-        start: 'top 0%',
-        end: 'top -150%',
-        scrub: 2,
-        pin: true,
-        yoyo: true,
-    }
-    })
-}
-
-experienceAnimation();
