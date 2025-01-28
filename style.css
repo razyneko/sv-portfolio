@@ -47,6 +47,7 @@ html,body{
     width: 100vw;
     height: 100dvh;
     background-color: #E9E9E9;
+    position: relative;
 }
 
 #nav{
@@ -152,6 +153,7 @@ html,body{
     display: flex;
     background-color: #E9E9E9;
     width: 100vw;
+    position: relative;
 }
 
 #slide{
@@ -168,6 +170,9 @@ html,body{
     
 }
 
+#heading{
+    overflow: hidden;
+}
 #page1 #heading h1{
     font-size: calc(8vw + 2rem);
     font-family: apercu;
@@ -236,17 +241,45 @@ html,body{
     font-size: calc(0.5vw + 0.5rem);
 }
 
-#skills{
+#expertise{
     width: 100vw;
     height: 100dvh;
     background-color: #E9E9E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: min(6vw, 10%);
+    position: relative;
 }
+
+
+#expertise-heading h1{
+    font-size: calc(8vw + 2rem);
+    font-family: apercu;
+    text-transform: uppercase;
+    text-align: left;
+    display: flex;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    padding: min(5rem, 8%);
+    justify-content: center;
+}
+
+.skill img{
+    width: calc(20vw + 1 rem);
+    height: calc(20vh + 1rem);
+}
+
 
 #contact{
     display: flex;
     width: 100vw;
     height: 100dvh;
     background-color: #E9E9E9;
+    position: relative;
 }
 
 #socials a{
@@ -271,85 +304,57 @@ html,body{
     font-family: apercu;
 }
     
-.container {
+
+.form-container {
+    width: 40vw;
+    height: fit-content;
+    margin: auto auto; 
+    padding: min(2rem, 5%) min(1.5rem, 4%);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
-    width: 40%;
-    height: 70%;
-    margin: auto auto;
-    border-radius: 20px;
-    padding: 40px;
-    box-sizing: border-box;
-    background: #ecf0f3;
-    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
     font-family: switzer;
   }
-  
-.inputs {
-    text-align: left;
-    margin-top: 30px;
-  }
-  
-.inputs label{
-    display: block;
-    width: 100%;
-    padding: 0;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-  }
-.inputs input{
-    display: block;
-    width: 100%;
-    padding: 0;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-}
 
-.inputs button{
+  .form-label {
     display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: calc(1vw + 0.5rem);
+  }
+
+  .form-input,
+  .form-textarea {
     width: 100%;
-    padding: 0;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
     border: none;
     outline: none;
-    box-sizing: border-box;
-}
-  
-.inputs label {
-    margin-bottom: 4px;
-  }
-  
-.inputs label:nth-of-type(2) {
-    margin-top: 12px;
-  }
-  
-.inputs input::placeholder {
-    color: gray;
-  }
-  
-.inputs input {
-    background: #ecf0f3;
-    padding: 10px;
-    padding-left: 20px;
-    height: 50px;
+    border-radius: 4px;
     font-size: 14px;
-    border-radius: 50px;
-    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+
   }
-  
-  .inputs button {
-    color: white;
-    margin-top: 20px;
-    background: #1DA1F2;
-    height: 40px;
-    border-radius: 20px;
+
+  .form-textarea {
+    resize: none;
+    height: 30vh;
+    margin-bottom: 2vh;
+  }
+
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
     cursor: pointer;
-    font-weight: 900;
-    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
-    transition: 0.5s;
   }
-  
-  .inputs button:hover {
-    box-shadow: none;
+
+  .form-button:hover {
+    background-color: #0056b3;
   }
-  
